@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "resumable-training"
+version = "0.1.0"
+description = "A small PyTorch training loop with atomic checkpoints, resume and SIGTERM handling."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "Gerard Louis Recinto" }]
+dependencies = ["torch>=2.2"]
+
+[project.scripts]
+resumable-train = "resumable.train:main"
+
+[tool.setuptools]
+packages = ["resumable"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
