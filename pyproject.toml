@@ -7,7 +7,7 @@ name = "resumable-training"
 version = "0.1.0"
 description = "A small PyTorch training loop with atomic checkpoints, resume and SIGTERM handling."
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.10,<3.14"
 license = { text = "MIT" }
 authors = [{ name = "Gerard Louis Recinto" }]
 dependencies = ["torch>=2.2"]
