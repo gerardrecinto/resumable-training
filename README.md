@@ -6,7 +6,7 @@ It is a toy model on synthetic data. The point is the checkpoint and resume mech
 
 ## Run it
 
-Needs Python 3.10 or later. The first install downloads PyTorch.
+Needs Python 3.10 to 3.13; it is tested on 3.12. PyTorch has no wheel for Python 3.14 yet, so if `python3 --version` says 3.14, make the virtualenv with `python3.12 -m venv .venv` instead. The first install downloads PyTorch.
 
 ```bash
 git clone https://github.com/gerardrecinto/resumable-training && cd resumable-training
