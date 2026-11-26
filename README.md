@@ -2,7 +2,7 @@
 
 A small PyTorch training loop that survives being killed. A run that dies, or is told to stop, picks up from its last checkpoint and ends with exactly the same weights as a run that was never interrupted.
 
-It is a toy model on synthetic data. The point is the checkpoint and resume mechanics you would want in front of a real training job on spot nodes, Kubernetes or SLURM.
+It runs on synthetic data. The point is the checkpoint and resume mechanics you would want in front of a real training job on spot nodes, Kubernetes or SLURM.
 
 ## Run it
 
