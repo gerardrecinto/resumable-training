@@ -41,8 +41,8 @@ On my laptop the first and third commands printed the same line, apart from `res
 
 Each step's data depends only on `(seed, step)`, so no data loader state has to be saved. If your job uses a shuffled loader or dropout, you also have to save and restore those random states, and this repo does not show that.
 
-## What it does not do
+## Resume equality and rollback
 
-One process on CPU. No multi-GPU, no sharded checkpoints, no learning-rate schedule, no mixed precision on GPU with a gradient scaler, and no upload to object storage. Exact equality was checked on one machine with one thread; a different PyTorch version or hardware can give different bits. Use it as the pattern, not as a framework.
+Exact equality was checked on one machine with one thread; a different PyTorch version or hardware can give different bits.
 
 To roll back, delete the checkpoint folder. Nothing outside it is written.
